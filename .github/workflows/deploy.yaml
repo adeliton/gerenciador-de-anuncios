@@ -25,3 +25,4 @@ jobs:
             git pull origin main
             docker compose -f docker-compose.yaml -f docker-compose.prod.yaml down
             docker compose -f docker-compose.yaml -f docker-compose.prod.yaml up -d --build
+            docker compose -f docker-compose.yaml -f docker-compose.prod.yaml exec app npm run db:push
