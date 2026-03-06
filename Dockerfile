@@ -38,6 +38,8 @@ COPY --from=prod-deps /app/node_modules ./node_modules
 COPY package.json ./
 # Copia o arquivo de configuração do PM2
 COPY ecosystem.config.cjs ./
+# Copia o arquivo de configuração do Drizzle (necessário para db:push/migrate)
+COPY drizzle.config.js ./
 # Copia o código fonte da API
 COPY src ./src
 # Copia os arquivos do frontend estático
