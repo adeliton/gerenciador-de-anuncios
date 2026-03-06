@@ -9,7 +9,7 @@
 
 	# Cabeçalhos de segurança enviados em todas as respostas
 	header {
-		# Impede que o navegador adivinhe o Content-Type (evita ataques de MIME sniffing)
+		# Impede que o navegador adivinhe o Content-Type (evita ataques de MIME sniffing) 
 		X-Content-Type-Options nosniff
 
 		# Impede que o site seja carregado dentro de um iframe (evita clickjacking)
